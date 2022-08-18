@@ -96,7 +96,8 @@ Services find the pods to load balance based on pod labels. The pod that you cre
 
 The Redis master we created earlier is a single pod (REPLICAS = 1), while the Redis read replicas we are creating here are 'replicated' pods. In Kubernetes, a replication controller is responsible for managing the multiple instances of a replicated pod.
 
-1. Use the file [redis-replica-controller.json](redis-replica-controller.json) to create the replication controller by running the `kubectl create -f` *`filename`* command:
+1. Use the file [redis-replica-controller.json](redis-replica-controller.json) to create the replication controller by running the `kubectl create -f` *`filename`* command::
+
 
     ```console
     $ kubectl create -f examples/guestbook-go/redis-replica-controller.json
